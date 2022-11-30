@@ -23,8 +23,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/components/Header/header.test.js"  ],
+    "**/*.tsx" ],
   "exclude": [
     "node_modules",
     ".next",

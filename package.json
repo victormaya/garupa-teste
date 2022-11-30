@@ -1,11 +1,10 @@
 {
-  "name": "boilerplate",
+  "name": "garupateste",
   "version": "2.2.1",
-  "description": "Boilerplate utilizando Typescript, React, NextJS e Styled Components!",
-  "author": "Alquipo Neto",
+  "description": "Referente ao teste da Garupa",
+  "author": "Victor Maya",
   "license": "MIT",
-  "repository": "github:Alquipo/boilerplate",
-  "homepage": "https://www.linkedin.com/in/alquiponeto/",
+  "homepage": "https://victormayadev.com",
   "engines": {
     "node": ">= 16.0.0",
     "npm": "We don't use this here bro... ;)",

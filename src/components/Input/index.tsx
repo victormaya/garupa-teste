@@ -10,7 +10,7 @@ import { WrapInput } from './styles'
 function Input({ label, inputValue, setInputValue, money }: IInput) {
   return (
     <WrapInput>
-      <label data-testid="lebal-input" htmlFor="nome">
+      <label data-testid="label-input" htmlFor={label}>
         <Text text={label} weight="400" color={theme.colors.primary} small />
       </label>
       {money ? (
@@ -27,8 +27,10 @@ function Input({ label, inputValue, setInputValue, money }: IInput) {
           data-testid="input"
           type="text"
           id={label}
+          name={label}
+          defaultValue={inputValue}
           value={inputValue}
-          onChange={(event) => setInputValue(event.target.value)}
+          onChange={(e) => setInputValue(e.target.value)}
         />
       )}
     </WrapInput>

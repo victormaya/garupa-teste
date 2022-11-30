@@ -1,6 +1,6 @@
 export interface IInput {
   label: string
   inputValue: string | number
-  setInputValue: (value: React.SetStateAction<string>) => void
+  setInputValue: React.Dispatch<React.SetStateAction<string | number>>
   money?: boolean
 }

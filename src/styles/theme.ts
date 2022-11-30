@@ -1,12 +1,12 @@
 export default {
   grid: {
-    container: '1100px'
-  },
-  border: {
-    radius: '0.4rem'
+    container: '1100px',
+    // editar valores abaixo
+    containerMedium: '1100px',
+    containerSmall: '1100px'
   },
   font: {
-    family: "'Roboto', sans-serif",
+    family: "'Lato', sans-serif;",
     light: 300,
     normal: 400,
     bold: 600,

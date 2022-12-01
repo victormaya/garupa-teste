@@ -10,5 +10,8 @@ export const WrapSelect = styled.div`
     border: 1px solid ${({ theme }) => theme.colors.grey};
     border-radius: 4px;
     margin-bottom: 20px;
+    @media (max-width: 1120px) and (min-width: 749px) {
+      width: 100%;
+    }
   }
 `

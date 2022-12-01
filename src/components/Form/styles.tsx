@@ -28,4 +28,25 @@ export const WrapForm = styled.form`
       filter: brightness(2);
     }
   }
+
+  @media (max-width: 1120px) and (min-width: 749px) {
+    width: 100%;
+    .inputs {
+      display: grid;
+      gap: 20px;
+      width: 100%;
+      grid-template-columns: 1fr 2fr 1fr;
+    }
+    button {
+      align-self: flex-end;
+      width: 200px;
+    }
+  }
+  @media (max-width: 748px) {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+    padding-bottom: 30px;
+  }
 `

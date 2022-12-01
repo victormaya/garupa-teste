@@ -37,23 +37,25 @@ function Form({ finishSubmit }: { finishSubmit: () => void }) {
   return (
     <WrapForm onSubmit={handleSubmit} data-testid="form">
       <Title title="Nova transação" color={theme.colors.black} small />
-      <Select
-        label="Tipo de transação"
-        options={['Compra', 'Venda']}
-        selectValue={transactionValue}
-        setSelectValue={setTransactionValue}
-      />
-      <Input
-        label="Nome da mercadoria"
-        inputValue={productName}
-        setInputValue={setProductName}
-      />
-      <Input
-        label="Valor"
-        money
-        inputValue={productValue}
-        setInputValue={setProductValue}
-      />
+      <div className="inputs">
+        <Select
+          label="Tipo de transação"
+          options={['Compra', 'Venda']}
+          selectValue={transactionValue}
+          setSelectValue={setTransactionValue}
+        />
+        <Input
+          label="Nome da mercadoria"
+          inputValue={productName}
+          setInputValue={setProductName}
+        />
+        <Input
+          label="Valor"
+          money
+          inputValue={productValue}
+          setInputValue={setProductValue}
+        />
+      </div>
       <button
         type="submit"
         disabled={!transactionValue || !productName || !productValue}

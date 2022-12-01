@@ -47,9 +47,16 @@ const GlobalStyles = createGlobalStyle`
     .global-container {
       width: ${theme.grid.container};
       margin: 0 auto;
-      padding: 30px 0;
+      padding: 20px 0;
       display: flex;
       gap: 20px;
+      @media (max-width: 1120px) {
+        width: ${theme.grid.containerMedium};
+        flex-direction: column;
+      }
+      @media (max-width: 748px) {
+        width: ${theme.grid.containerSmall};
+      }
     }
   `}
 

@@ -9,7 +9,7 @@ import { WrapInput } from './styles'
 
 function Input({ label, inputValue, setInputValue, money }: IInput) {
   return (
-    <WrapInput>
+    <WrapInput className="input-form">
       <label data-testid="label-input" htmlFor={label}>
         <Text text={label} weight={400} color={theme.colors.primary} small />
       </label>

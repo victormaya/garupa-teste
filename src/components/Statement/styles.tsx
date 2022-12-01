@@ -53,4 +53,7 @@ export const WarpStatement = styled.div`
   .notFound {
     margin: 8px auto;
   }
+  @media (max-width: 1120px) {
+    width: 100%;
+  }
 `

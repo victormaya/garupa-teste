@@ -1,9 +1,8 @@
 export default {
   grid: {
     container: '1100px',
-    // editar valores abaixo
-    containerMedium: '1100px',
-    containerSmall: '1100px'
+    containerMedium: '728px',
+    containerSmall: '371px'
   },
   font: {
     family: "'Lato', sans-serif;",

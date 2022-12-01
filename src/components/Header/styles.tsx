@@ -14,6 +14,14 @@ export const HeaderWrap = styled.div`
     align-items: center;
     max-width: ${({ theme }) => theme.grid.container};
     width: ${({ theme }) => theme.grid.container};
+    @media (max-width: 1120px) {
+      max-width: ${({ theme }) => theme.grid.containerMedium};
+      width: ${({ theme }) => theme.grid.containerMedium};
+    }
+    @media (max-width: 748px) {
+      max-width: ${({ theme }) => theme.grid.containerSmall};
+      width: ${({ theme }) => theme.grid.containerSmall};
+    }
   }
   .logo-title {
     display: flex;

@@ -17,8 +17,7 @@ function Input({ label, inputValue, setInputValue, money }: IInput) {
         <CurrencyInput
           id={label}
           data-testid="input-money"
-          defaultValue={0}
-          decimalsLimit={2}
+          value={inputValue}
           onValueChange={(value) => setInputValue(value)}
           prefix="R$ "
         />
@@ -28,7 +27,6 @@ function Input({ label, inputValue, setInputValue, money }: IInput) {
           type="text"
           id={label}
           name={label}
-          defaultValue={inputValue}
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         />

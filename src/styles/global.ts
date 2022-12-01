@@ -44,6 +44,11 @@ const GlobalStyles = createGlobalStyle`
       font-size: ${theme.font.sizes.medium};
       color: ${theme.colors.black};
     }
+    .global-container {
+      width: ${theme.grid.container};
+      margin: 0 auto;
+      padding: 30px 0;
+    }
   `}
 
 `

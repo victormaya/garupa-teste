@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const WrapInput = styled.div`
   input {
+    padding: 0 10px;
     margin-top: 10px;
     width: 370px;
     height: 32px;

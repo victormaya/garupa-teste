@@ -13,5 +13,8 @@ export const WrapInput = styled.div`
     @media (max-width: 1120px) and (min-width: 749px) {
       width: 100%;
     }
+    @media (max-width: 391px) {
+      width: 100%;
+    }
   }
 `

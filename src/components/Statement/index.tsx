@@ -33,7 +33,7 @@ function Statement({ list, total }: { list: IProduct[]; total: number }) {
           color={theme.colors.black}
         />
       </div>
-      {total > 0 ? (
+      {list?.length > 0 ? (
         list?.map((item: IProduct, index: number) => {
           return (
             <div

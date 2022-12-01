@@ -38,6 +38,6 @@ describe('NavButtons', () => {
         <Header />
       </ThemeProvider>
     )
-    options.map((item) => expect(screen.getByText(item)).toBeInTheDocument())
+    options.map((item) => expect(screen.queryAllByText(item)).toHaveLength(2))
   })
 })

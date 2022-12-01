@@ -22,6 +22,9 @@ export const HeaderWrap = styled.div`
       max-width: ${({ theme }) => theme.grid.containerSmall};
       width: ${({ theme }) => theme.grid.containerSmall};
     }
+    @media (max-width: 391px) {
+      width: 90%;
+    }
   }
   .logo-title {
     display: flex;

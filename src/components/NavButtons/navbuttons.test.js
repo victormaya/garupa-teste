@@ -10,6 +10,6 @@ describe('NavButtons', () => {
         <NavButtons listButtons={list} />
       </ThemeProvider>
     )
-    list.map((item) => expect(screen.getByText(item)).toBeInTheDocument())
+    list.map((item) => expect(screen.queryAllByText(item)).toHaveLength(1))
   })
 })

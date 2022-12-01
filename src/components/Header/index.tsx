@@ -2,6 +2,7 @@ import React from 'react'
 
 import Logo from 'assets/svgs/Logo'
 import NavButtons from 'components/NavButtons'
+import SideBar from 'components/SideBar'
 import Title from 'components/Title'
 import theme from 'styles/theme'
 
@@ -16,6 +17,7 @@ function Header() {
           <Title title="Controle financeiro" color={theme.colors.primary} />
         </div>
         <NavButtons listButtons={['Dashboard', 'Resumo', 'Configurações']} />
+        <SideBar />
       </div>
     </HeaderWrap>
   )

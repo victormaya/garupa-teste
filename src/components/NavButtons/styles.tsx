@@ -18,4 +18,7 @@ export const WrapNavButtons = styled.nav`
       border-right: 1px solid ${({ theme }) => theme.colors.grey};
     }
   }
+  @media (max-width: 1120px) {
+    display: none;
+  }
 `

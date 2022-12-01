@@ -11,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
     &::after {
       box-sizing: inherit;
     }
+    list-style-type: none;
   }
 
   ${({ theme }) => css`
@@ -56,6 +57,9 @@ const GlobalStyles = createGlobalStyle`
       }
       @media (max-width: 748px) {
         width: ${theme.grid.containerSmall};
+      }
+      @media (max-width: 391px) {
+        width: 90%;
       }
     }
   `}

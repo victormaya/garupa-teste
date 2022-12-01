@@ -10,7 +10,7 @@ function Select({ label, selectValue, setSelectValue, options }: ISelect) {
   return (
     <WrapSelect>
       <label htmlFor="nome">
-        <Text text={label} weight="400" color={theme.colors.primary} small />
+        <Text text={label} weight={400} color={theme.colors.primary} small />
       </label>
       <select
         data-testid="select"

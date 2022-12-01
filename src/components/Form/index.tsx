@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { useState } from 'react'
 
 import Input from 'components/Input'
 import Select from 'components/Select'
@@ -8,7 +8,7 @@ import theme from 'styles/theme'
 
 import { WrapForm } from './styles'
 
-function Form() {
+function Form({ finishSubmit }: { finishSubmit: () => void }) {
   const [transactionValue, setTransactionValue] = useState<string>('Compra')
   const [productName, setProductName] = useState<string>('')
   const [productValue, setProductValue] = useState<number>(0)
@@ -30,12 +30,13 @@ function Form() {
       window.localStorage.items = JSON.stringify(itemsObject)
       setProductName('')
       setProductValue(0)
+      finishSubmit()
     }
   }
 
   return (
     <WrapForm onSubmit={handleSubmit} data-testid="form">
-      <Title title="Nova transação" color={theme.colors.primary} />
+      <Title title="Nova transação" color={theme.colors.black} small />
       <Select
         label="Tipo de transação"
         options={['Compra', 'Venda']}
@@ -59,7 +60,7 @@ function Form() {
       >
         <Text
           text="Adicionar transação"
-          weight="400"
+          weight={400}
           color={theme.colors.white}
         />
       </button>

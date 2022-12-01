@@ -48,6 +48,8 @@ const GlobalStyles = createGlobalStyle`
       width: ${theme.grid.container};
       margin: 0 auto;
       padding: 30px 0;
+      display: flex;
+      gap: 20px;
     }
   `}
 

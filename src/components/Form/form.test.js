@@ -1,12 +1,13 @@
-import { screen, render, ThemeProvider, theme, fireEvent, userEvent } from '../../tests'
+import { screen, render, ThemeProvider, theme, fireEvent } from '../../tests'
 import Form from './index'
 
 describe('From', () => {
+  const finishSubmit = jest.fn()
   // deverá aparecer o titulo, o select, o input de nome, o input de valor e o botão
   it('the title, select, name input, value input and button should appear', () => {
     render(
       <ThemeProvider theme={theme}>
-        <Form />
+        <Form finishSubmit={finishSubmit} />
       </ThemeProvider>
     )
     // title
@@ -25,7 +26,7 @@ describe('From', () => {
   it('check if calling onSubmit', () => {
     render(
       <ThemeProvider theme={theme}>
-        <Form />
+        <Form finishSubmit={finishSubmit} />
       </ThemeProvider>
     )
 

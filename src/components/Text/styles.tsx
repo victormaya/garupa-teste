@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const PText = styled.p<{
   small?: boolean
-  weight: string
+  weight: number
   color: string
 }>`
   font-size: ${(props) =>

@@ -11,7 +11,7 @@ function Input({ label, inputValue, setInputValue, money }: IInput) {
   return (
     <WrapInput>
       <label data-testid="label-input" htmlFor={label}>
-        <Text text={label} weight="400" color={theme.colors.primary} small />
+        <Text text={label} weight={400} color={theme.colors.primary} small />
       </label>
       {money ? (
         <CurrencyInput

@@ -11,7 +11,7 @@ function NavButtons({ listButtons }: INavButtons) {
     <WrapNavButtons>
       {listButtons.map((item) => (
         <button key={item}>
-          <Text text={item} color={theme.colors.primary} weight="600" />
+          <Text text={item} color={theme.colors.primary} weight={600} />
         </button>
       ))}
     </WrapNavButtons>

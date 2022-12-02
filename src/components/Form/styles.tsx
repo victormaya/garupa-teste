@@ -48,9 +48,9 @@ export const WrapForm = styled.form`
     border-left: none;
     border-radius: 0;
     padding-bottom: 30px;
+    width: 100%;
   }
   @media (max-width: 391px) {
-    width: 100%;
     .inputs {
       width: 100%;
     }

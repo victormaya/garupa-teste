@@ -19,7 +19,7 @@ describe('Input', () => {
     })
   })
   // devera verificar se ao clicar no botao menu o sidebar abre
-  it('should check if the menu button is showing and if the sidebar is closed', () => {
+  it('should check if when you click on the menu button the sidebar opens', () => {
     render(
       <ThemeProvider theme={theme}>
         <Sidebar />
@@ -35,7 +35,7 @@ describe('Input', () => {
     })
   })
   // devera verificar se ao clicar no botao fechar o sidebar fecha
-  it('should check if the menu button is showing and if the sidebar is closed', () => {
+  it('should check if when you click on the close button the sidebar closes', () => {
     render(
       <ThemeProvider theme={theme}>
         <Sidebar />

@@ -9,14 +9,19 @@ function SideBar() {
 
   return (
     <>
-      <ButtonOpenSidebar type="button" onClick={() => setOpened(true)}>
+      <ButtonOpenSidebar
+        data-testid="button-menu-mobile"
+        type="button"
+        onClick={() => setOpened(true)}
+      >
         <div />
       </ButtonOpenSidebar>
-      <WrapSidebar opened={opened}>
+      <WrapSidebar opened={opened} data-testid={'sidebar'}>
         <div className="wrap-button">
           <button
             type="button"
             className="close"
+            data-testid="close"
             onClick={() => setOpened(false)}
           >
             <div />
@@ -24,7 +29,9 @@ function SideBar() {
         </div>
         <ul className="items">
           {tabs.map((item) => (
-            <li key={item}>{item}</li>
+            <li data-testid="item-sidebar" key={item}>
+              {item}
+            </li>
           ))}
         </ul>
       </WrapSidebar>

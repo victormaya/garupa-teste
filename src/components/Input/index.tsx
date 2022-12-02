@@ -1,5 +1,5 @@
-import React from 'react'
-import CurrencyInput from 'react-currency-input-field'
+import React, { useState } from 'react'
+import IntlCurrencyInput from 'react-intl-currency-input'
 
 import Text from 'components/Text'
 import { IInput } from 'models/input'
@@ -8,18 +8,34 @@ import theme from 'styles/theme'
 import { WrapInput } from './styles'
 
 function Input({ label, inputValue, setInputValue, money }: IInput) {
+  const currencyConfig = {
+    locale: 'pt-BR',
+    formats: {
+      number: {
+        BRL: {
+          style: 'currency',
+          currency: 'BRL',
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        }
+      }
+    }
+  }
+
   return (
     <WrapInput className="input-form">
       <label data-testid="label-input" htmlFor={label}>
         <Text text={label} weight={400} color={theme.colors.primary} small />
       </label>
       {money ? (
-        <CurrencyInput
-          id={label}
+        <IntlCurrencyInput
           data-testid="input-money"
+          currency="BRL"
+          config={currencyConfig}
           value={inputValue}
-          onValueChange={(value) => setInputValue(value)}
-          prefix="R$ "
+          onChange={(event, value: string) => {
+            setInputValue(value)
+          }}
         />
       ) : (
         <input

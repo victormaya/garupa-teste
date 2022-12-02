@@ -5305,11 +5305,6 @@ rc@^1.0.1, rc@^1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-currency-input-field@^3.6.9:
-  version "3.6.9"
-  resolved "https://registry.yarnpkg.com/react-currency-input-field/-/react-currency-input-field-3.6.9.tgz#5eaa1190512d1de214863032045b67dd0582c87a"
-  integrity sha512-GNqG1Np+dz3VfBhDc9pFPIyar9SgB/fRjIofFSXOoyFNffda5r24n6LSoXfqQ9L7IKRDoUwveMMJV5GCM2eByw==
-
 react-dom@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
@@ -5317,6 +5312,11 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-intl-currency-input@^0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/react-intl-currency-input/-/react-intl-currency-input-0.2.6.tgz#d71396a9db478fa5341ac562af2fd9c20afb7683"
+  integrity sha512-As8Kg3m9BKwD4liefx/gxG6Dge/8GjdZQBDVlwUUxrgtqWUkRNvRj9Iy4pNx4+o1xpXaEt+gfjtzO6r8uTNBlg==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"

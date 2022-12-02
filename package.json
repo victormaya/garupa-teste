@@ -29,8 +29,8 @@
     "next": "^12.3.1",
     "next-pwa": "^5.6.0",
     "react": "^18.2.0",
-    "react-currency-input-field": "^3.6.9",
     "react-dom": "^18.2.0",
+    "react-intl-currency-input": "^0.2.6",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {

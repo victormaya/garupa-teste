@@ -43,10 +43,10 @@ describe('From', () => {
     fireEvent.change(inputValue, { target: { value: '4000' } })
 
     // salvar dados e limpar dados
-    const button = screen.getByRole('button')
+    const button = screen.getByTestId('button-submit')
     fireEvent.click(button)
     expect(select).toHaveValue('Compra')
     expect(inputName).toHaveValue('')
-    expect(inputValue).toHaveValue('R$ 0')
+    expect(inputValue).toHaveValue('R$ 0,00')
   })
 })

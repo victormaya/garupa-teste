@@ -58,6 +58,7 @@ function Form({ finishSubmit }: { finishSubmit: () => void }) {
       </div>
       <button
         type="submit"
+        data-testid="button-submit"
         disabled={!transactionValue || !productName || !productValue}
       >
         <Text

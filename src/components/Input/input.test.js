@@ -36,6 +36,6 @@ describe('Input', () => {
     const elementMoney = screen.getByTestId('input-money')
     expect(elementMoney).toBeVisible()
     fireEvent.change(elementMoney, { target: { value: '4000' } })
-    expect(elementMoney).toHaveValue('R$ 4.000')
+    expect(elementMoney).toHaveValue('R$ 40,00')
   })
 })

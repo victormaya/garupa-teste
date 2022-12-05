@@ -4,7 +4,7 @@ Garupa Teste
 
 ## 🚀 Sobre o Projeto
 
-Este e TESTE feito em [Next.js](https://nextjs.org/) para a emprea Garupa.
+Este é o TESTE feito em [Next.js](https://nextjs.org/) para a emprea Garupa.
 
 ## 🔨 Tecnologias:
 
